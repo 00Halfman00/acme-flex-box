@@ -1,3 +1,83 @@
-body {
-    color: blue;
+
+* {
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    background-color: dodgerblue;
+}
+.logo  > p {
+    padding: 0 .5rem;
+    color: white;
+}
+header > div {
+    flex: 1;
+}
+header > nav {
+    width: 100%;
+    display: flex;
+    flex:3;
+    justify-content: center;
+}
+#nava {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: small;
+    height: 50px;
+    width: 100%;
+}
+.logo {
+    flex: 1;
+}
+
+
+h1, h2 {
+    color: slategrey;
+    padding: .5rem;
+}
+#user {
+    display:flex;
+    justify-content: center;
+    
+}
+form {
+    border: solid black 1px;
+    border-radius: .25em;
+    margin: 2rem;
+    width: 50%;
+}
+#save{
+    background-color:dodgerblue;
+}
+label {
+    font-size: small;
+    color: slategrey;
+    padding: 1em;
+    margin: 1em;
+}
+#cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+
+.card {
+    text-align: center;
+    padding: 1rem 4rem;
+    margin: .5rem;
+    border: solid black 1px;
+    border-radius: .5em;
+}
+
+@media(max-width: 500px) {
+    header{
+
+        flex-flow: column wrap;
+        
+    }
+    body {flex-flow: column;
+    }
 }
