@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="styles.css" rel="stylesheet" />
     <title>ACME</title>
   </head>
@@ -29,12 +30,17 @@
     <section id="user">
       <form>
         <h1>Create A User</h1>
+        <div class="inputs">
+          <p>
         <label>FirstName</label><input type="text" name="First Name" />
-        <br />
+        </p>
+        <p>
         <label>LastName</label><input type="text" name="Last Name" />
-        <br />
+      </p>
+        <p>
         <label>Department</label><input type="search" />
-        <br />
+        </p>
+        </div>
         <div>
         <button>clear</button>
         <button id="save">save</button>

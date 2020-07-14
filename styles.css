@@ -29,6 +29,9 @@ h2 {
   color: slategrey;
   padding: 0.5rem;
 }
+h1 {
+  margin: 0.5em;
+}
 #user {
   display: flex;
   justify-content: center;
@@ -43,6 +46,7 @@ form {
   background-color: dodgerblue;
 }
 label {
+  height: 1em;
   font-size: small;
   color: slategrey;
   padding: 1em;
@@ -63,30 +67,50 @@ label {
   border-radius: 0.5em;
   flex: 0 0 calc(100% / 3 -10rem);
 }
+form > div {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  margin: 1rem 0;
+}
+
+.inputs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+.inputs p {
+  margin: 0.25em;
+}
 
 @media (max-width: 600px) {
   header,
   nav {
-      display: flex;
+    display: flex;
     flex-flow: column;
   }
- 
+
   .item {
     align-self: flex-start;
     padding: 0.5rem 1em;
   }
 
-  /* .card {
+  form {
     flex: 0 0 calc(100% - 2rem);
-  } */
+  }
   #cards > div {
     flex-flow: column;
   }
   form > div {
-      display:flex;
-      flex-flow:column;
+    display: flex;
+    flex-flow: column;
   }
   button {
-  
+    margin: 0 1rem;
   }
+  /* input {
+      display:block;
+  } */
 }
